@@ -1,0 +1,96 @@
+body {
+  font-family: 'Montserrat';
+  background-color: rgb(216, 216, 216);
+  /* footer support */
+  margin-bottom: 100px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
+#gridContainer {
+  /* display: grid;
+  align-content: stretch;
+  justify-content: stretch; */
+  display: flex;
+  width: 500px;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 10px;
+}
+
+button, input {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+
+}
+
+#selectionContainer {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#slide {
+  margin-top: 10px;
+}
+
+#Etch-A-Sketch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.fa-github {
+  color: rgb(65, 53, 119);
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+
+
+
