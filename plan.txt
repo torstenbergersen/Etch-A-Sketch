@@ -1,0 +1,10 @@
+1. style buttons and slider and color picker
+2. make slider correspond to amount of squares in grid
+  - if slider adjusted, clear grid
+3. make grid fill allotted space
+4. fix drawing function to operate only when mouse is held down
+5. connect color picker to color of drawing
+6. make rainbow function input random rgb color for each square
+7. make eraser function eraser clicked square
+8. make clear function clear grid
+9. make coloring more etch-a-sketch like

@@ -13,18 +13,18 @@
     <body>
       <h1>Etch-A-Sketch</h1>
       <div id="Etch-A-Sketch">
-        <div id="gridContainer">
+        <div id="grid">
         </div>
-        <div id="selectionContainer">
+        <div id="options">
           <input id="colorPicker" type="color" value="#333333" />
           <button class="color">Color</button>
           <button class="rainbow">Rainbow</button>
           <button class="eraser">Eraser</button>
           <button class="clear">Clear</button>
         </div>
+        <div id="grid-size-display">16x16</div>
         <div id="slide">
-          <div class="slideContainer">16 x 16</div>
-            <input type="range" min="1" max="64" value="16" id="sizeSlider">
+          <input type="range" min="1" max="64" value="16" id="grid-size-slider">
         </div>
       </div>
       <footer class="footer">

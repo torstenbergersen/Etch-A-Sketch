@@ -1,17 +1,3 @@
-body {
-  font-family: 'Montserrat';
-  background-color: rgb(216, 216, 216);
-  /* footer support */
-  margin-bottom: 100px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
 html {
   /* footer support */
@@ -19,52 +5,24 @@ html {
   min-height: 100%;
 }
 
-#gridContainer {
-  /* display: grid;
-  align-content: stretch;
-  justify-content: stretch; */
-  display: flex;
+body {
+  font-family: 'Montserrat';
+  background-color: rgba(244, 244, 244, 0.775);
+  /* footer support */
+  margin-bottom: 100px;
+}
+
+#grid {
   width: 500px;
   height: 500px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-bottom: 10px;
+  display: grid;
+  box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+  grid-template-columns: repeat(16,16fr);
+  grid-template-rows: repeat(16,16fr);
 }
 
-button, input {
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  outline: none;
 
-}
 
-#selectionContainer {
-  display: flex;
-  gap: 5px;
-  justify-content: space-between;
-  align-content: center;
-}
-
-#slide {
-  margin-top: 10px;
-}
-
-#Etch-A-Sketch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 48px;
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
 
 /* FOOTER */
 
