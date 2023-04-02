@@ -1,6 +1,6 @@
 :root {
   --primary-dark: #00091a;
-  --primary-light: #e6eeff;
+  --primary-light: #f0f4fe;
   --secondary-light: #ccddff;
 }
 
@@ -24,8 +24,9 @@ body {
 
 h1 {
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 50px;
+  margin-top: 10px;
 
 }
 
@@ -37,36 +38,19 @@ h1 {
   box-shadow: #4236783d 0px 3px 8px;
   grid-template-columns: repeat(16,16fr);
   grid-template-rows: repeat(16,16fr);
-  margin-bottom: 30px;
-}
-
-#colorPicker {
-  width: 50px;
-  height: 50px;
-  border: none;
-}
-
-#colorPicker::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-
-#colorPicker::-webkit-color-swatch {
-  border: 1px solid black;
-  border-radius: 50px;
-  box-shadow: #4236783d 0px 3px 8px;
+  margin-bottom: 20px;
 }
 
 button {
   font-family: inherit;
   font-size: 20px;
   color: inherit;
-  width: 100px;
+  width: 130px;
   border-radius: 7px;
   background-color: var(--primary-light);
   border: 1px solid var(--primary-dark);
-  padding-top: 5px;
-  padding-bottom: 5px;
-
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 #options {
@@ -79,18 +63,12 @@ button.active {
   color: var(--primary-light);
 }
 
-button, #colorPicker {
+button {
   transition: transform 0.1s ease-in-out;
 }
 
-button:hover, #colorPicker:hover {
+button:hover {
   transform: scale(1.05);
-}
-
-#colorPicker:active {
-  transition: transform 0.05s ease-in-out;
-  transform: scale(1);
-  outline: none;
 }
 
 #slide {
@@ -115,6 +93,9 @@ button:hover, #colorPicker:hover {
   width: 200px;
   outline: none;
   margin-top: 25px;
+  opacity: 0.85;
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
 }
 
 #grid-size-slider::-webkit-slider-runnable-track {
@@ -131,7 +112,17 @@ button:hover, #colorPicker:hover {
   height: 20px;
   border-radius: 25px;
   margin-top: -6px;
+  cursor: pointer;
+  color: var(--primary-dark);
   background: var(--primary-dark);
+}
+
+#grid-size-slider:hover {
+  opacity: 1;
+}
+
+.grid {
+  user-select: none;
 }
 
 /* FOOTER */
@@ -146,8 +137,8 @@ button:hover, #colorPicker:hover {
   color: inherit;
   gap: 10px;
   width: 100%;
-  padding: 10px;
-  font-size: 17px;
+  padding: 5px;
+  font-size: 18px;
 }
 
 .fa-github {
