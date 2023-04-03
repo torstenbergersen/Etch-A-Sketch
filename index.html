@@ -6,25 +6,23 @@
     <title>Etch-A-Sketch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-con" href="images/favicon.ico?">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet">
   </head>
     <body>
       <h1>Etch-A-Sketch</h1>
-      <div id="Etch-A-Sketch">
         <div id="grid">
         </div>
         <div id="options">
-          <button class="draw">Color</button>
-          <button class="rainbow">Rainbow</button>
-          <button class="clear">Clear</button>
+          <button id="draw" >Draw</button>
+          <button id="rainbow" >Rainbow</button>
+          <button id="clear" >Clear</button>
         </div>
         <div id="slide">
           <input type="range" min="1" max="64" value="16" id="grid-size-slider">
         </div>
-        <div id="grid-size-display">16x16</div>
-      </div>
+        <div id="size-value">16x16</div>
       <footer class="footer">
         <p>
           torstenbergersen

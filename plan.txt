@@ -1,9 +1,0 @@
-
-Use JavaScript to add event listeners to each element, so that they can respond to user input.
-Use JavaScript to create the grid based on the size selected by the user using the slider.
-Use JavaScript to clear the grid when the clear button is clicked.
-Use JavaScript to change the color of the drawing when the color picker is used.
-Use JavaScript to randomly generate a color when the rainbow button is clicked.
-Use JavaScript to allow the user to erase individual squares when the eraser button is used.
-Use JavaScript to allow the user to draw on the grid by clicking and holding the mouse over the squares.
-Use JavaScript to reset the grid when the size is changed with the slider.
